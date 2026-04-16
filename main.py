@@ -197,11 +197,11 @@ if __name__ == "__main__":
     else:
         wav_file_path = "example.wav"  # Default file path for testing
 
-    # Predict the sound class
+    # Predict the class of sound
     wav_file_path = process_wav_to_memory(wav_file_path)
     try:
         predicted_class = predict_sound_class(wav_file_path, model, scaler, label_encoder)
         print(f"The predicted class for the audio file '{wav_file_path}' is: {predicted_class}")
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"An error occurred: {e}") 
     
