@@ -1,10 +1,8 @@
 # Audio Classification System: Speech, Music, and Noise
 
 A three-class audio classifier that labels `.wav` clips as **Speech**, **Music**, or **Noise**. It combines classical digital signal processing (band-pass/low-pass filtering, MFCCs, pitch, zero-crossing rate, RMS, energy) with a compact feed-forward neural network (MLP) trained in TensorFlow/Keras.
-
-This project was built as a course project ("Signals and Systems") at NUST, Department of Computer & Software Engineering, submitted 31 December 2024, by Muhammad Mussa Kazim, Bazil bin Aamir, Muhammad Taha, and Talha Iftikhar. See [Appendix: Full Academic Project Report](#appendix-full-academic-project-report) below for the original write-up (also available as `Project Report.docx` / `SNS Project Report.docx`).
-
 ---
+![Main Dashboard](main-dashboard.jpg)
 
 ## Table of Contents
 
@@ -153,6 +151,9 @@ Each `.wav` file is reduced to a 17-dimensional feature vector via `librosa`:
 
 All features are mean-pooled across time frames, then standardized with a fitted `StandardScaler` before being passed to the model.
 
+![Spectrum Plotting 1](spectrum-plotting.png)
+![Spectrum Plotting 2](spectrum-plotting-2.png)
+
 ## Dataset
 
 Trained and evaluated on the public **MUSAN** (Music, Speech, And Noise) corpus, roughly 2,000 samples split across the three classes. The raw MUSAN audio is **not** included in this repository — only the extracted feature CSVs (`combined.csv` etc.) are committed. Filenames follow MUSAN's convention (e.g. `music-fma-0000.wav`, where `fma` denotes the Free Music Archive subset).
@@ -227,6 +228,8 @@ From the notebook's final evaluation on the 20% held-out test split:
 |---|---|
 | Training accuracy | 98.85% |
 | Test accuracy | 94.35% |
+![Model Traning](model-training.png)
+![Model Output](model-output.png)
 
 ## Known Issues & Limitations
 
