@@ -229,7 +229,7 @@ From the notebook's final evaluation on the 20% held-out test split:
 | Training accuracy | 98.85% |
 | Test accuracy | 94.35% |
 ![Model Traning](model-training.png)
-![Model Output](model-output.png)
+![Model Output](model-accuracy.png)
 
 ## Known Issues & Limitations
 
