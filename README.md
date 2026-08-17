@@ -20,7 +20,6 @@
 - [Performance](#performance)
 - [Known Issues & Limitations](#known-issues--limitations)
 - [Roadmap Ideas](#roadmap-ideas)
-- [Authors](#authors)
 - [Appendix: Full Academic Project Report](#appendix-full-academic-project-report)
 
 ---
@@ -249,16 +248,6 @@ From the notebook's final evaluation on the 20% held-out test split:
 - Rebuild and commit the Flask GUI (or a lightweight Streamlit/Gradio alternative) for interactive predictions and spectrogram visualization.
 - Add unit tests around feature extraction and the prediction pipeline.
 - Consolidate or remove the redundant `output.csv` / `output_features.csv` artifacts.
-
-## Authors
-
-- Muhammad Mussa Kazim
-- Bazil bin Aamir
-- Muhammad Taha
-- Talha Iftikhar
-
-Department of Computer & Software Engineering, National University of Sciences and Technology (NUST) — "Signals and Systems" course project, December 2024.
-
 ---
 
 ## Appendix: Full Academic Project Report
