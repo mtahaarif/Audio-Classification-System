@@ -1,6 +1,6 @@
 # Audio Classification System: Speech, Music, and Noise
 
-### A three-class audio classifier that labels `.wav` clips as **Speech**, **Music**, or **Noise**. It combines classical digital signal processing (band-pass/low-pass filtering, MFCCs, pitch, zero-crossing rate, RMS, energy) with a compact feed-forward neural network (MLP) trained in TensorFlow/Keras.
+## A three-class audio classifier that labels `.wav` clips as **Speech**, **Music**, or **Noise**. It combines classical digital signal processing (band-pass/low-pass filtering, MFCCs, pitch, zero-crossing rate, RMS, energy) with a compact feed-forward neural network (MLP) trained in TensorFlow/Keras.
 ---
 ![Main Dashboard](main-dashboard.jpg)
 
